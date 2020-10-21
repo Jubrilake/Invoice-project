@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b5876;
+  background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  color: #333;
+  line-height: 1.4;
+  overflow-x: hidden;
+  padding: 0 30px;
+}
+.invoice-card {
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+
+  padding: 0 30px;
+
+  border-radius: 3px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  text-align: center;
+}
+h1 {
+  font-size: 30px;
+  background: #2b5876;
+  background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.material-icons {
+  background: #2b5876;
+  background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+input:focus {
+  border-bottom-color: #4e4376 !important;
+}
+
+.invoice-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  cursor: pointer;
+  backface-visibility: hidden;
+  position: relative;
+}
+.invoice-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.invoice-btn_white {
+  background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  color: #fff;
+}
+.invoice-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.invoice-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.invoice-btn_white::after {
+  background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
+  background: linear-gradient(to right, #2b5876, #4e4376);
+}
+.invoice-btn:hover::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+.text-center {
+  text-align: center;
+}
+label {
+  color: #333 !important;
+}
+select {
+  background-color: red !important;
+}
+.alert {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  margin: 10px 0 0 0;
+  background-color: rgb(81, 211, 81);
+  letter-spacing: 3px;
+}
